@@ -14,13 +14,14 @@
 		73E60BA4188A73D400D49502 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E60BA3188A73D400D49502 /* main.m */; };
 		73E60BA8188A73D400D49502 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E60BA7188A73D400D49502 /* AppDelegate.m */; };
 		73E60BAB188A73D400D49502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E60BA9188A73D400D49502 /* Main.storyboard */; };
-		73E60BAE188A73D400D49502 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E60BAD188A73D400D49502 /* ViewController.m */; };
 		73E60BB0188A73D400D49502 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E60BAF188A73D400D49502 /* Images.xcassets */; };
 		73E60BB7188A73D400D49502 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E60BB6188A73D400D49502 /* XCTest.framework */; };
 		73E60BB8188A73D400D49502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E60B97188A73D400D49502 /* Foundation.framework */; };
 		73E60BB9188A73D400D49502 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E60B9B188A73D400D49502 /* UIKit.framework */; };
 		73E60BC1188A73D400D49502 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73E60BBF188A73D400D49502 /* InfoPlist.strings */; };
 		73E60BC3188A73D400D49502 /* TodoListAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E60BC2188A73D400D49502 /* TodoListAppTests.m */; };
+		73E60BD2188A785E00D49502 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E60BD1188A785E00D49502 /* TableViewController.m */; };
+		73E60BD5188A807300D49502 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E60BD4188A807300D49502 /* Cell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		73E60BA6188A73D400D49502 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		73E60BA7188A73D400D49502 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		73E60BAA188A73D400D49502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		73E60BAC188A73D400D49502 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		73E60BAD188A73D400D49502 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		73E60BAF188A73D400D49502 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		73E60BB5188A73D400D49502 /* TodoListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E60BB6188A73D400D49502 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		73E60BBE188A73D400D49502 /* TodoListAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TodoListAppTests-Info.plist"; sourceTree = "<group>"; };
 		73E60BC0188A73D400D49502 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		73E60BC2188A73D400D49502 /* TodoListAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoListAppTests.m; sourceTree = "<group>"; };
+		73E60BD0188A785E00D49502 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		73E60BD1188A785E00D49502 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		73E60BD3188A807300D49502 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		73E60BD4188A807300D49502 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +118,12 @@
 				73E60BA6188A73D400D49502 /* AppDelegate.h */,
 				73E60BA7188A73D400D49502 /* AppDelegate.m */,
 				73E60BA9188A73D400D49502 /* Main.storyboard */,
-				73E60BAC188A73D400D49502 /* ViewController.h */,
-				73E60BAD188A73D400D49502 /* ViewController.m */,
+				73E60BD0188A785E00D49502 /* TableViewController.h */,
+				73E60BD1188A785E00D49502 /* TableViewController.m */,
 				73E60BAF188A73D400D49502 /* Images.xcassets */,
 				73E60B9E188A73D400D49502 /* Supporting Files */,
+				73E60BD3188A807300D49502 /* Cell.h */,
+				73E60BD4188A807300D49502 /* Cell.m */,
 			);
 			path = TodoListApp;
 			sourceTree = "<group>";
@@ -249,9 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73E60BAE188A73D400D49502 /* ViewController.m in Sources */,
+				73E60BD5188A807300D49502 /* Cell.m in Sources */,
 				73E60BA8188A73D400D49502 /* AppDelegate.m in Sources */,
 				73E60BA4188A73D400D49502 /* main.m in Sources */,
+				73E60BD2188A785E00D49502 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
